@@ -1,0 +1,107 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+
+  .twitter-follow-card{
+
+    gap: 8px;
+    box-shadow: 0px 12px 30px 0px rgba(177, 174, 174, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  
+  .twitter-follow-card:hover{
+    border-radius: 32px;
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
+    transition: all 600ms cubic-bezier(0.5, 1, 0.15, 1);
+    cursor: pointer;
+  }
+  
+  .twitter-follow-card:hover:before {
+    transform: scale(0.50);
+  }
+
+
+.tw-card-article{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    gap: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin: 30px;  */
+}
+
+.tw-card-article .tw-card-header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+   
+}
+
+.tw-card-article .tw-card-header .tw-card-username{
+display: flex;
+flex-direction: column;
+margin-left: 14px;
+}
+
+.tw-card-article .tw-card-header span{
+    opacity: .6;
+}
+
+.tw-card-article .tw-card-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.tw-card-article .tw-card-button{
+    margin-left: 20px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+
+
+
+.tw-card-button-unfollowed.un-followed:hover{
+   border:1px solid #bbb;
+   background: transparent;
+    color: rgb(208, 61, 61);
+    border: 1px solid rgb(208, 61, 61);
+    width: 140px;
+    transition: .3s ease ;
+}
+
+.tw-card-button:hover{
+    background-color: rgb(205, 210, 210);
+    transition: .3s ease ;
+    color: #ffff;
+    
+}
+
+
+.follow-txt{
+    display: block;
+    cursor: pointer;
+}
+
+.tw-card-button.tw-card-button-unfollowed.un-followed:hover .follow-txt{
+    display: none;
+}
+
+.unfollow-txt{
+    display: none;
+}
+
+.tw-card-button.tw-card-button-unfollowed.un-followed:hover .unfollow-txt{
+    display: block;
+    cursor: pointer;
+}
